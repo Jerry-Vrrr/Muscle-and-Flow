@@ -1,0 +1,51 @@
+@import "./scss/variables.scss";
+@import "./scss/mixins";
+.wrapper {
+  display: flex;
+  // flex-direction: column;
+  background: $background;
+  color: $text-color;
+  // padding: $block-padding;
+  height: 100vh;
+  
+}
+
+.nav {
+  background:rgb(27,2,36);
+  background: linear-gradient(68deg, rgba(27,2,36,1) 17%, rgba(93,27,116,1) 66%, rgba(164,45,207,1) 98%);
+  height: 3em;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+      height: 7em;
+      margin-top: 1.5em;
+      opacity: .90;
+    }
+  .menu {
+    width: 2em;
+    opacity: 0.6;
+  }
+  .menu:hover {
+    opacity: .62;
+    width:2.1em;
+  }
+  .logo:hover {
+    opacity: 1;
+    width:7.1em;
+  }
+
+  h1 {
+    align-self: flex-end;
+    margin-left: 0.5em;
+    margin-top: 0.25em;
+    font-size: 3em;
+    color: #95fcfc;
+  }
+}
+

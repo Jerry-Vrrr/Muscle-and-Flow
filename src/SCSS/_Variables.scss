@@ -1,16 +1,6 @@
-$breakpoints: (
-  narrow: 360px,
-  small: 480px,
-  tablet: 650px,
-  medium: 720px,
-  large: 960px,
-  wide: 1200px,
-  wider: 1400px
-);
-
-$darkBlue: #0A122A;
-$blue: #80A4ED;
-$gray: #838691;
-$red: #D10000;
-$darkRed: #9A031E;
-$white: #FBFAF8;
+$background: linear-gradient(49deg, rgba(5,60,64,1) 6%, rgba(21,5,33,0.9906556372549019) 15%, rgba(29,5,46,1) 77%, rgba(5,60,64,1) 93%);;
+$text-color: #f1d3b3;
+$btn-width: 120px;
+$btn-height: 40px;
+$block-padding: 50px;
+// $logo: 5em;
