@@ -186,4 +186,27 @@
   .phil {
     width: 30em;
   }
+
  }
+
+ .carousel {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   h1 {
+     align-self: center;
+   }
+ }
+ .before {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   object-fit: scale-down;
+   width: 25em;
+   height: 25em;
+   padding: 1em 2em;
+   img {
+     overflow: hidden;
+     margin: 2px;
+   }
+}
