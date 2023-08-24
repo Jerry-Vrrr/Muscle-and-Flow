@@ -1,12 +1,11 @@
 @import "./scss/variables.scss";
 @import "./scss/mixins";
 
-body {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width:1200px;
-  margin:0 auto;
-}
+// body {
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   width:100vh;
+// }
 
 .wrapper {
   display: flex;
@@ -14,18 +13,19 @@ body {
   background: $background;
   color: $text-color;
   height: 100vh;
+  overflow-x: hidden;
   
 }
 
 .nav {
   background:rgb(27,2,36);
-  background: linear-gradient(68deg, rgba(27,2,36,1) 17%, rgba(93,27,116,1) 66%, rgba(164,45,207,1) 98%);
+  background: $nav-bg;
   height: 3em;
   width: 100vw;
   display: flex;
   flex-direction: row;
   padding: 1em;
-  align-content: flex-start;
+  align-content: center;
   justify-content: space-between;
   align-items: center;
 
@@ -64,12 +64,13 @@ body {
 .main {
   display: flex;
   position: relative;
-  width: 100vw;
+  width: 102.78vw;
 
   img {
     width: 100%;
-    // object-fit: scale-down;
+    // background-size: cover;
   }
+
   .btn {
     position: absolute;
     top: 50%;
@@ -115,3 +116,51 @@ body {
     -ms-transform: translate(-50%, -50%) scale(1.1);;
   }
 }
+.programs {
+  display: flex;
+  justify-content: center;
+  background-color: $dark;
+}
+ .program {
+   padding: .5em 4em 4em 4em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;  
+   width: 50%;
+   min-height: 30em;
+
+   .logo {
+    height: 8em;
+    width: 8em;
+    margin-left: -1em;
+    opacity: .90;
+    transition: all 0.5s ease-in-out;
+  }
+  .banner {
+    background-color: $teal;
+    margin-left: -1em;
+    opacity: 95%;
+    margin-top: -2em;
+    color: black;
+    font-size: 1.5em;
+    padding: .1em 1em .1em 1em;
+    border-radius: 6px;
+  }
+  p {
+    padding-right: 3em;
+    line-height: 1.6em;
+    font-weight: 600;
+    font-size: larger;
+    color: antiquewhite;
+  }
+  h2,ul {
+    color: $teal;
+    margin-bottom: -.5em;
+    margin-left: -3em;
+  }
+  li {
+    margin-left: -5em;
+    font-size: large;
+    font-weight: 500;
+  }
+ }
