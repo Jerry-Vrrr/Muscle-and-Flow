@@ -1,0 +1,146 @@
+body {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(49deg, #053c40 6%, rgba(21, 5, 33, 0.990656) 15%, #1d052e 77%, #053c40 93%);
+  color: #f1d3b3;
+  height: 100vh;
+}
+
+.nav {
+  background: #1b0224;
+  background: linear-gradient(68deg, #1b0224 17%, #5d1b74 66%, #a42dcf 98%);
+  height: 3em;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1em;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .logo {
+  height: 7em;
+  margin-top: 1.5em;
+  opacity: .90;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu {
+  width: 2.5em;
+  margin-right: 3em;
+  opacity: 0.6;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu:hover {
+  opacity: .62;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav .logo:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav h1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 0.5em;
+  margin-top: 0.25em;
+  font-size: 3em;
+  color: #95fcfc;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+
+.main img {
+  width: 100%;
+}
+
+.main .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #E22BF2;
+  color: black;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.main .btn:hover {
+  padding: 13px 25px;
+  font-size: 17px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%) scale(1.1);
+}
+
+.main .btn2 {
+  position: absolute;
+  top: 90%;
+  left: 15%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #2BDAF2;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.main .btn2:hover {
+  padding: 9px 25px;
+  font-size: 19px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%) scale(1.1);
+}
+/*# sourceMappingURL=App.css.map */
