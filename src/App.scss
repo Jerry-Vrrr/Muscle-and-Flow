@@ -164,3 +164,26 @@
     font-weight: 500;
   }
  }
+
+ .who {
+  background: linear-gradient(68deg, rgba(255,255,255,1) 0%, rgba(43,218,242,0.8225884103641457) 57%);
+  display: flex;
+  .who-text {
+    padding: 4em;
+    color: black;
+    p {
+      margin: 1em 3em 1em 2em;
+      font-size: larger;
+      line-height: 2em;
+      font-weight: 600;
+    }
+    h2 {
+      margin-left: 1em;
+      font-size: larger;
+      font-weight: 900;
+    }
+  }
+  .phil {
+    width: 30em;
+  }
+ }
