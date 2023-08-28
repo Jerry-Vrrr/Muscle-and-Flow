@@ -9,6 +9,10 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
+    height: '20em',
+    width: '20em',
+    borderRadius: '8px',
+    padding: '2em',
   },
 };
 
@@ -29,7 +33,7 @@ function closeModal() {
   setIsOpen(false);
 }
   return (
-    <div>
+    <div >
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -37,23 +41,26 @@ function closeModal() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
+        
+
+        <div className='modal'>
+        <button className='close' onClick={closeModal}>&times;</button>
+        {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2> */}
+        <div className='login'>Enter Username and Password</div>
+        <form className='form'>
           <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
+          <label>user name</label>
+          <input />
+          <label>password</label>
+          <button className='btn2'>login</button>
         </form>
+        </div>
+        
       </Modal>
     </div>
   )
 }
 
-// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
-// Modal.setAppElement('#yourAppElement');
 
 
 
