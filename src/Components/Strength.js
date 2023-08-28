@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../Images/MF Logo.png'
 
 
-export default function Strength() {
+export default function Strength({setIsOpen,openModal}) {
   return (
     <div className='program'>
         <img className='logo' src={Logo} alt="MF stylized logo" />
@@ -19,6 +19,9 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             <li>and reason three</li>
             <li>fourth reason as well</li>
         </ul>
+        <button class="btn2" onClick={openModal}>
+        SIGN UP NOW!
+      </button>
         </div>
   )
 }

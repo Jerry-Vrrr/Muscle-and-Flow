@@ -95,7 +95,7 @@
   }
   .btn2 {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 15%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -164,3 +164,98 @@
     font-weight: 500;
   }
  }
+
+ .who {
+  background: linear-gradient(68deg, rgba(255,255,255,1) 0%, rgba(43,218,242,0.8225884103641457) 57%);
+  display: flex;
+  .who-text {
+    padding: 4em;
+    color: black;
+    p {
+      margin: 1em 3em 1em 2em;
+      font-size: larger;
+      line-height: 2em;
+      font-weight: 600;
+    }
+    h2 {
+      margin-left: 1em;
+      font-size: larger;
+      font-weight: 900;
+    }
+  }
+  .phil {
+    width: 30em;
+  }
+ }
+
+ .carousel {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   h1 {
+     align-self: center;
+   }
+ }
+ .before {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   object-fit: scale-down;
+   width: 25em;
+   height: 25em;
+   padding: 1em 2em;
+   img {
+     overflow: hidden;
+     margin: 2px;
+   }
+}
+
+.btn2 {
+  background-color: $teal;
+  margin: 2em;
+  margin-left: -1em;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.btn2:hover {
+  padding: 9px 25px;
+  font-size: 19px;
+  // transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%) scale(1.1);;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  .close {
+    align-self: flex-end;
+      background-color: rgba(255,255,255,0);
+      border: none;
+      align-self: flex-end;
+      margin-top: -2em;
+      margin-right: -1.5em;
+  }
+  .login {
+    margin-top: 4em;
+    align-self: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  label {
+    margin-bottom: 1em;
+  }
+  .btn2 {
+    margin-top: 0em;
+    align-self: flex-end;
+  }
+}
