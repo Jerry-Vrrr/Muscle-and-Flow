@@ -1,7 +1,7 @@
 import React from 'react'
-import Menu from './Menu'
+import Menu from './DropMenu'
 import Logo from '../Images/MF Logo.png'
-import MenuIcon from '../Images/MFmenu.png'
+import DropMenu from './DropMenu'
 
 
 export default function Nav() {
@@ -9,7 +9,7 @@ export default function Nav() {
   return (
     <div className='nav'>
       <img className='logo' src={Logo} alt="MF stylized logo" />
-      <img className='menu' src={MenuIcon} alt="MF menu" />
+      <DropMenu />
     </div>
   )
 }
